@@ -1,5 +1,19 @@
 # pythonProject37
 
+#clint
+import socket
+c = socket.socket()
+c.connect(("127.0.0.1", 1337))
+
+d = c.recv(2048).decode()
+print(d)
+
+m = input("what your name?")
+c.send(m.encode())
+c.recv(2048).decode
+
+c.close()
+
 
 #server
 import socket
